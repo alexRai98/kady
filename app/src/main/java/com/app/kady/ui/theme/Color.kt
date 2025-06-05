@@ -1,0 +1,61 @@
+package com.app.kady.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+
+val Purple80 = Color(0xFFD0BCFF)
+val PurpleGrey80 = Color(0xFFCCC2DC)
+val Pink80 = Color(0xFFEFB8C8)
+val Rosa = Color (0xFFFFECED)
+val RosaIntenso = Color(0xFFD9767C)
+val WhitePink = Color(0xFFFFF5F0)
+val Pastel = Color(0xFFEBB3B6)
+val PinkPastel = Color(0xFFFFEEE9)
+
+val Purple40 = Color(0xFF6650a4)
+val PurpleGrey40 = Color(0xFF625b71)
+val Pink40 = Color(0xFF7D5260)
+
+val RedPrincipalColor = Color(0xFFB1000B)
+val OrangeRedColor    = Color(0xFFC73434)
+val RedSecondary = Color(0xFFC01A24)
+val RedLightColor = Color(0xFFF8E9E7)
+val RedAlertColor = Color(0xFFFFF3F1)
+val RedDisableColor = Color(0xFFF9E8E9)
+val  Red  = Color(0xFFA50A0A)
+
+val OrangePrimary = Color(0xFFED6316)
+val OrangeBaby = Color(0XFFFFF5F0)
+val OrangeSecondary = Color(0xFFE55200)
+val OrangeWhite = Color(0xFFFFF5F0)
+val OrangeDisable = Color(0xFFFFF5F0)
+
+val GreyDisableText = Color(0xFFC1C1C1)
+val GreyPlaceHolder = Color(0xFFAFAFAF)
+val GreyLabel = Color(0xFF555555)
+val lowGrey = Color(0xFFF4F4F4)
+val GreyHelperButton = Color(0xFF656565)
+val NotIntenseGrey = Color (0xFFEAEAEA)
+val GreyWhite = Color(0xFFF3F3F3)
+val GreySoft = Color(0xFF6B6B6B)
+val  WhiteGrey = Color(0xFFF2F2F7)
+val GreyLight = Color(0xFFE2E2E2)
+val GreyBlack = Color(0xFF3C3C43)
+val IntermediateGrey = Color(0xFFD9D9D9)
+val GreyTransparenT = Color (0xFFEFEFEF)
+val Transparent = Color(0x51EFEFEF)
+val TransparentSmall = Color(0xFFF9F9F9)
+val LightGrey = Color(0xFF707070)
+
+val SimpleGrey = Color(0xFF838383)
+val BaseColor = Color(0xFF484848)
+val Base35 = Color(0xFFDBDBDB)
+val ColorBase = Color(0xFF111111)
+val BlackSoft = Color(0xFF2F2F2F)
+val GreyDisableButton = Color(0xFFEEEEEE)
+val TransparetRed = Color(0xFFF9E8E9)
+val GreyTransparent = Color(0xFFDBDBDB)
+val GreyDark = Color(0xFF60626C)
+
+val GreenOliver = Color(0xFF777d3b)
+val BrownOliver = Color(0xFF927a57)
