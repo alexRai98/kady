@@ -26,8 +26,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.app.kady.R
-import com.app.kady.application.ui.theme.BackGroundPrincipal
 import com.app.kady.shared.ui.DefaultButton
+import com.app.kady.ui.theme.BackGroundPrincipal
 import com.app.kady.ui.theme.BrownOliver
 import com.app.kady.ui.theme.GreenOliver
 import com.app.kady.ui.theme.PoppinsTypography
@@ -41,7 +41,7 @@ fun WelcomeScreen() {
         modifier = Modifier
             .fillMaxSize()
             .background(color = BackGroundPrincipal)
-            .padding(top = 24.dp)
+            .padding(top = 100.dp)
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally

@@ -59,3 +59,4 @@ val GreyDark = Color(0xFF60626C)
 
 val GreenOliver = Color(0xFF777d3b)
 val BrownOliver = Color(0xFF927a57)
+val BackGroundPrincipal = Color(0xFFede7db)
