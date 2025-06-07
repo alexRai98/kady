@@ -1,4 +1,4 @@
-package com.app.kady.login.ui.loginScreen
+package com.app.kady.login.ui.welcome
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -24,7 +24,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.app.kady.R
 import com.app.kady.application.model.Routes
-import com.app.kady.application.ui.theme.BackGroundPrincipal
+import com.app.kady.ui.theme.BackGroundPrincipal
 import kotlinx.coroutines.delay
 
 @Preview
@@ -49,7 +49,7 @@ fun SplashScreen(navController: NavHostController) {
         startAnimation = true
         delay(2000)
         navController.popBackStack()
-        navController.navigate(Routes.LoginScreen.route)
+        navController.navigate(Routes.WelcomeScreen.route)
     }
 
     Box(
