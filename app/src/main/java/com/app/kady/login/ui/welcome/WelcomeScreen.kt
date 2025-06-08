@@ -1,4 +1,4 @@
-package com.app.kady.login.ui.loginScreen
+package com.app.kady.login.ui.welcome
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -23,18 +23,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import com.app.kady.R
+import com.app.kady.application.model.Routes
+import com.app.kady.shared.model.UserTypeEnum
 import com.app.kady.shared.ui.DefaultButton
 import com.app.kady.ui.theme.BackGroundPrincipal
 import com.app.kady.ui.theme.BrownOliver
 import com.app.kady.ui.theme.GreenOliver
 import com.app.kady.ui.theme.PoppinsTypography
 
-@Preview
+
 @Composable
-fun WelcomeScreen() {
+fun WelcomeScreen(navigator: NavHostController,selectUserType: (UserTypeEnum)->Unit) {
 
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -62,12 +64,12 @@ fun WelcomeScreen() {
             )
         }
         Spacer(modifier = Modifier.size(80.dp))
-        Body()
+        Body(navigator,selectUserType)
     }
 }
 
 @Composable
-private fun Body() {
+private fun Body(navigator: NavHostController,selectUserType: (UserTypeEnum)->Unit) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -85,22 +87,31 @@ private fun Body() {
         }
         Spacer(modifier = Modifier.size(20.dp))
         DefaultButton(
+            text = "Cliente",
+            color = GreenOliver,
+            enabled = true,
+            icon = Icons.Outlined.PersonOutline,
+            handleClick = {
+                navigator.navigate(Routes.LoginScreen.route)
+                selectUserType(UserTypeEnum.CLIENT)
+            })
+        DefaultButton(
             text = "Negocio",
             color = GreenOliver,
             enabled = true,
             icon = Icons.Outlined.Store,
-            handleClick = {})
+            handleClick = {
+                navigator.navigate(Routes.LoginScreen.route)
+                selectUserType(UserTypeEnum.STORE)
+            })
         DefaultButton(
             text = "Delivery",
             color = GreenOliver,
             enabled = true,
             icon =  Icons.Outlined.DeliveryDining,
-            handleClick = {})
-        DefaultButton(
-            text = "Cliente",
-            color = GreenOliver,
-            enabled = true,
-            icon = Icons.Outlined.PersonOutline,
-            handleClick = {})
+            handleClick = {
+                navigator.navigate(Routes.LoginScreen.route)
+                selectUserType(UserTypeEnum.DELIVERY)
+            })
     }
 }
