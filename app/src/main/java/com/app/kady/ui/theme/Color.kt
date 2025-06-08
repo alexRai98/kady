@@ -56,7 +56,7 @@ val GreyDisableButton = Color(0xFFEEEEEE)
 val TransparetRed = Color(0xFFF9E8E9)
 val GreyTransparent = Color(0xFFDBDBDB)
 val GreyDark = Color(0xFF60626C)
-
 val GreenOliver = Color(0xFF777d3b)
+val GreenOil= Color(0xFF566202)
 val BrownOliver = Color(0xFF927a57)
 val BackGroundPrincipal = Color(0xFFede7db)
