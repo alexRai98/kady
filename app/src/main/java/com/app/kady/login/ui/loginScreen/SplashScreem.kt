@@ -24,7 +24,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.app.kady.R
 import com.app.kady.application.model.Routes
-import com.app.kady.application.ui.theme.BackGroundPrincipal
+import com.app.kady.ui.theme.BackGroundPrincipal
 import kotlinx.coroutines.delay
 
 @Preview
